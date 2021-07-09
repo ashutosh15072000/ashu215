@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            font-family: 
+            Ubuntu,sans-serif;
+        }
+        .container{
+            width: 90%;
+            max-width: 990px;
+        
+            margin: 0 auto;
+            
+        }
+        .container-nav{
+            display:flex;
+            justify-content: space-between;
+
+        }
+        header{
+        
+            background-color: pink;
+            padding: 2rem 0;            
+        }
+        nav ul{
+            list-style: none;
+            display:flex;
+            justify-content: center;
+             
+            padding: 0;
+            
+        }
+        nav li{
+            margin:0 1rem;
+
+        }
+        nav  a{
+            text-decoration: none;
+            color: #707070;
+            font-weight: 800;
+            padding: .15rem 0;
+
+        }
+        nav a:hover,
+        nav a:focus{
+         color:#1792d2;
+        }
+        h1{
+            font-family:'lora',serif ;
+            font-size: 2rem;
+            margin: 0;
+        }
+        .subtitle{
+            font-weight: 800;
+            font-size: 0.8rem;
+            margin: 0;
+
+        }
+        .current-page{
+            border-bottom: 2px solid black;
+
+        }
+        .current-page:hover{
+            color: #707070;
+        }
+        @media (max-width: 675px){
+            .container-nav{
+                display: flex;
+                flex-direction: column;
+
+            }
+            header{
+                text-align: center;
+            }
+            nav ul{
+                flex-direction: column;
+            }
+            nav li{
+                margin:0.5rem 0;
+            }
+
+        }
+       
+    </style>
+</head>
+<body>
+    <header><div class="container container-nav"><div class="title">
+        <h1>Living The Social Life</h1>
+        <p class="subtitle">A Blog Exploring Minimalism in Life</p>
+    </div>
+    <nav>
+    <ul>
+        <li> <a class="current-page" href="#">Home</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Recent photos</a></li>
+        <li><a href="#">Downloads</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+    
+</body>
+</html>
